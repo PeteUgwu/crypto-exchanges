@@ -11,8 +11,8 @@ const initialState = [];
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case  FETCH_ALL_EXCHANGES:
-      return 'Under construction';
+    case `${FETCH_ALL_EXCHANGES}/fulfilled`:
+      return action.payload;
     default:
       return state;
   }
@@ -20,7 +20,7 @@ export default function reducer(state = initialState, action) {
 
 // action creator
 export const fetchExchanges = createAsyncThunk(FETCH_ALL_EXCHANGES,
-    async (payload) => {
-      await axios.post(BASE_URL, payload);
-      return payload;
+    async () => {
+      const response = await axios.get(BASE_URL);
+      return response.data;
     });

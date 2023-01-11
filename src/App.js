@@ -1,7 +1,8 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { fetchExchanges } from './Redux/Exchange/Exchange';
 
 // components
 import Navbar from './Components/Navbar';
@@ -11,7 +12,8 @@ import Navbar from './Components/Navbar';
  import Details from './Pages/Details';
 
 function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  dispatch(fetchExchanges())
   return (
     <>
       <div className="App">
