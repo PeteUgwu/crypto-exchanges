@@ -11,11 +11,13 @@ const ExchangeDetails = ({exchange, showDetails}) => {
   return (
     <>
         <div className="exchange-home-section">
+        <div className='details-btn'>
+        <button onClick={() => showDetails(id)}> <BsBoxArrowRight style={{ background: '#CF4278', fontSize: '16px', }}/></button>
+        </div>
           <img src={image} alt={name} />
           <div className='home-exchange-details'>
           <div className='exchange-name' >{name}</div>
           <div className='trust-score-rank' >{trust_score_rank}</div>
-          <button onClick={() => showDetails(id)}> <BsBoxArrowRight style={{ background: '#CF4278', fontSize: '14px', }}/></button>
           </div>
         </div>
     </>

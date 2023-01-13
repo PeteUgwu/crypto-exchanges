@@ -1,5 +1,5 @@
 .details-container {
-    padding: 2rem 0;
+    padding: 0.2rem 0;
     background-color: #CF4278;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .exchange-image-name {
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 .exchange-image-name h3 {
@@ -21,13 +21,16 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0.5rem; 
-    margin: 0 0.5rem;
+    margin: 0 0.2rem;
 }
 
 p:nth-child(odd) {
     background-color: #EC4C8B;
+    border-radius: 0.5rem;
+
 }
 p:nth-child(even) {
     background-color: #DF4783;
+    border-radius: 0.5rem;
 }
 
