@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import store from '../Redux/configureStore';
+import store from '../Redux/ConfigureStore';
 import Details from '../Pages/Details';
 import renderWithProviders from '../Redux/Exchange/Exchange-test-utils';
 

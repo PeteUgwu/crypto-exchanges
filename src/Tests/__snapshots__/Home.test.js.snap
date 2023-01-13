@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots 1`] = `
+<div
+  className="main-container"
+>
+  <div
+    className="search-field"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search An Exchange"
+      type="text"
+    />
+  </div>
+  <div
+    className="exchange-container"
+  />
+</div>
+`;
