@@ -7,13 +7,13 @@ import { fetchExchanges } from './Redux/Exchange/Exchange';
 // components
 import Navbar from './Components/Navbar';
 
- //pages
- import Home from './Pages/Home';
- import Details from './Pages/Details';
+// pages
+import Home from './Pages/Home';
+import Details from './Pages/Details';
 
 function App() {
   const dispatch = useDispatch();
-  dispatch(fetchExchanges())
+  dispatch(fetchExchanges());
   return (
     <>
       <div className="App">

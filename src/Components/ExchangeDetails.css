@@ -1,46 +1,42 @@
 .exchange-home-section {
-    background-color: #CF4278;
-    padding: 1rem;
+  background-color: #cf4278;
+  padding: 1rem;
 }
 
 .exchange-home-section img {
-    width: 60%;
+  align-items: flex-start;
+  height: auto;
+  width: 80px;
 }
- 
-  .exchange-home-section:nth-child(4n+1),
-  .exchange-home-section:nth-child(4n) {
-    background:  #DF4783;
-  }
 
-  .exchange-home-section img, .home-exchange-details {
-    display: flex;
-    justify-content: center;
-  }
+.exchange-home-section:nth-child(4n+1),
+.exchange-home-section:nth-child(4n) {
+  background: #df4783;
+}
 
-  .exchange-home-section img {
-    align-items: flex-start;
-    height: auto;
-    width: 80px;
-  }
+.exchange-home-section img,
+.home-exchange-details {
+  display: flex;
+  justify-content: center;
+}
 
-  .home-exchange-details {
-    flex-direction: column;
-    align-items: flex-end;
-    color: #fff;
-  }
+.home-exchange-details {
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
 
-  .details-btn button {
-    margin-bottom: 0.5rem;
-    color: #fff;
-    margin-left: 8.5rem;
-  }
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
 
-  button {
-    padding: 0;
-    border: none;
-    outline: none;
-    font: inherit;
-    color: inherit;
-    background: none
-  }
-  
+.details-btn button {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  margin-left: 8.5rem;
+}
