@@ -1,12 +1,13 @@
 import React from 'react';
 import { useLocation } from 'react-router';
+import "./Details.css";
 
 const Details = () => {
   const location = useLocation()
   const {image, name, country, url, year_established, trade_volume_24h_btc_normalized, trust_score, has_trading_incentive } = location.state
   return (
-    <div>
-      <div>
+    <div className='details-container'>
+      <div className='exchange-image-name'>
         <img src={image}  alt={name} />
         <h3>{name} Details</h3>
       </div>

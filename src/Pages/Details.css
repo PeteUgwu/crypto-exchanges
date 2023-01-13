@@ -1,0 +1,23 @@
+.details-container {
+    padding: 2rem 0;
+}
+
+.exchange-image-name {
+    padding-bottom: 2rem;
+}
+
+.exchange-image-name h3 {
+    color: #fff;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0.5rem; 
+}
+
+p:nth-child(odd) {
+    background-color: #EC4C8B;
+    border-radius: 1rem;
+}
+

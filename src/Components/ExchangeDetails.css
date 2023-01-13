@@ -1,0 +1,29 @@
+.exchange-home-section {
+    background-color: #CF4278;
+    padding: 1rem;
+    /* border-radius: 0.5rem; */
+}
+
+.exchange-home-section img {
+    width: 60%;
+}
+
+.exchange-home-section:nth-child(3n-1) {
+    background:  #DF4783;
+  }
+
+  .exchange-home-section img, .home-exchange-details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .exchange-home-section img {
+    align-items: flex-start;
+  }
+
+  .home-exchange-details {
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+  }
+  

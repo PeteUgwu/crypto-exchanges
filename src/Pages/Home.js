@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import ExchangeDetails from '../Components/ExchangeDetails';
 import { useNavigate } from 'react-router';
+import "./Home.css";
 
 const Home = () => {
     const navigate = useNavigate()
@@ -26,15 +27,15 @@ const Home = () => {
 
     }
   return (
-    <div>
-        <div>
+    <div className='main-container'>
+        <div className='search-field'>
             <input
               type="text"
               placeholder="Search An Exchange"
               onChange={(e) => handleSearch(e.target.value)}  
             />
         </div>
-        <div>
+        <div className='exchange-container'>
             {exchangeList.map((exchange) => (
                 <ExchangeDetails 
               key={exchange.id}
