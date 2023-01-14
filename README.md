@@ -197,7 +197,7 @@ If you like this project... Give a start and a follow.
 
 ## 📝 License <a name="license"></a>
 
-- This project is [MIT](https://github.com/PeteUgwu/crypto-exchanges/blob/Homepage-main/LICENSE) licensed.
+- This project is [MIT](./LICENSE) licensed.
 - This project is also [Creative Common](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
