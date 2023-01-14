@@ -15,7 +15,6 @@ const Details = () => {
         <img src={image} alt={name} />
         <h3>
           {name}
-          {' '}
           Details
         </h3>
       </div>

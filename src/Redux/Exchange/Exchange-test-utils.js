@@ -10,7 +10,7 @@ export default function renderWithProviders(
   {
     preloadedState = {},
     // Automatically create a store instance if no store was passed in
-    store = configureStore({ reducer: { exchanges: userReducer }, preloadedState }),
+    store = configureStore({ reducer: { Exchange: userReducer }, preloadedState }),
     ...renderOptions
   } = {},
 ) {

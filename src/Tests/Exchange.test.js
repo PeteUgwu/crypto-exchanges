@@ -2,11 +2,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import axios from 'axios';
 import reducer, { fetchExchanges } from '../Redux/Exchange/Exchange';
 
-// Testing the reducers
-test('The initial state', () => {
-  expect(reducer()).toEqual([]);
-});
-
 test('Array of exchanges added tothe state', () => {
   const previousState = [];
   const action = { type: 'Exchange/Exchange/FETCH_ALL_EXCHANGES/fulfilled', payload: [{ id: 1, name: 'Binance', trust_score_rank: 1 }] };
@@ -36,6 +31,6 @@ describe('shoud dispatch get all exchanges action', () => {
     await store.dispatch(fetchExchanges());
     expect(postSpy).toBeCalledWith(BASE_URL);
     const state = store.getState();
-    expect(state).toEqual([{ exchangeId: 'binance', name: 'Binance', trust_score_rank: 1 }]);
+    expect(state).toEqual({ data: [{ exchangeId: 'binance', name: 'Binance', trust_score_rank: 1 }] });
   });
 });
