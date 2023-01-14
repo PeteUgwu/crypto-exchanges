@@ -1,0 +1,35 @@
+.details-container {
+  padding: 0.2rem 0;
+  background-color: #cf4278;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.3rem;
+}
+
+.exchange-image-name {
+  padding: 2rem 0;
+}
+
+.exchange-image-name h3 {
+  color: #fff;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0.5rem;
+  margin: 0 0.2rem;
+}
+
+p:nth-child(odd) {
+  background-color: #ec4c8b;
+  border-radius: 0.5rem;
+}
+
+p:nth-child(even) {
+  background-color: #df4783;
+  border-radius: 0.5rem;
+}

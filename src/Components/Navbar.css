@@ -1,0 +1,32 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #ec4c8b;
+}
+
+.home-btn button {
+  display: flex;
+  background-color: #ec4c8b;
+  padding: 0.5rem;
+  border-style: none;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  align-items: center;
+}
+
+.nav-title h1 {
+  font-size: 20px;
+}
+
+.home-btn button,
+.nav-title h1,
+span {
+  color: #fff;
+}
+
+.nav-icons span {
+  margin: 0 0.5rem;
+}
